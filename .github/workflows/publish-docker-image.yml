@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  publish-ghcr:
+  ghcr:
     runs-on: ubuntu-latest
 
     permissions:
@@ -38,7 +38,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: ghcr.io/${{ github.repository }}:latest
 
-  publish-dockerhub:
+  dockerhub:
     runs-on: ubuntu-latest
 
     steps:
