@@ -7,7 +7,7 @@ import languages from "./parameters/languages.json" assert { type: "json" };
 
 const addon = new Addon("Picovoice Porcupine");
 
-kernel.setDockerRepository("talkops/talkops-addon-picovoice-porcupine");
+addon.setDockerRepository("talkops/talkops-addon-picovoice-porcupine");
 
 addon.setDockerVolumeData("keywords");
 
