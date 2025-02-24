@@ -6,7 +6,7 @@ A TalkOps Addon made to work with [TalkOps](https://link.talkops.app/talkops).
 
 ## Installation Guide
 
-Install [TalkOps](https://link.talkops.app/install-talkops).
+_[TalkOps](https://link.talkops.app/install-talkops) must be installed beforehand._
 
 
 ## Integration Guide
@@ -14,7 +14,7 @@ Install [TalkOps](https://link.talkops.app/install-talkops).
 Add the service and setup the environment variables if needed:
 
 _compose.yml_
-```
+``` yml
 name: talkops
 
 services:
