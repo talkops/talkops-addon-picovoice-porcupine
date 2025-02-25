@@ -9,6 +9,10 @@ const addon = new Addon("Picovoice Porcupine");
 
 addon.setDockerRepository("talkops/talkops-addon-picovoice-porcupine");
 
+kernel.setDescription(
+  "This Addon based on [Picovoice Porcupine](https://picovoice.ai/platform/porcupine/) allows the agent to be activated by a custom keyword without requiring continuous listening. It runs efficiently on-device, ensuring privacy and low latency, making it ideal for hands-free voice interaction."
+);
+
 addon.setDockerVolumeData("keywords");
 
 addon.setEnvironmentVariables({
