@@ -52,3 +52,4 @@ The sensitivity between 0 and 1. A higher sensitivity reduces miss rate at cost 
 
 A comma-separated list of WebSocket server URLs for real-time communication with specified agents.
 * Default value: `ws://talkops`
+* Possible values: `ws://talkops1` `ws://talkops2`
