@@ -3,11 +3,14 @@
 
 A TalkOps Addon made to work with [TalkOps](https://link.talkops.app/talkops).
 
+This Addon based on [Picovoice Porcupine](https://picovoice.ai/platform/porcupine/) allows the agent to be activated by a custom keyword without requiring continuous listening. It runs efficiently on-device, ensuring privacy and low latency, making it ideal for hands-free voice interaction.
 
 ## Installation Guide
 
 _[TalkOps](https://link.talkops.app/install-talkops) must be installed beforehand._
 
+* Generate and download your keywords from the [Picovoice Console](https://console.picovoice.ai).
+* Place the `keywords` directory inside the `data` volume.
 
 ## Integration Guide
 
