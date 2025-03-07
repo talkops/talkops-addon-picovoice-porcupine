@@ -33,7 +33,7 @@ addon.setEnvironmentVariables({
   SENSITIVITY: {
     description:
       "The sensitivity between 0 and 1. A higher sensitivity reduces miss rate at cost of increased false alarm rate.",
-    defaultValue: 0.6,
+    defaultValue: 0.7,
     validation: (v) => parseFloat(v) >= 0 && parseFloat(v) <= 1,
   },
 });

@@ -46,7 +46,7 @@ The language of keywords.
 #### SENSITIVITY
 
 The sensitivity between 0 and 1. A higher sensitivity reduces miss rate at cost of increased false alarm rate.
-* Default value: `0.6`
+* Default value: `0.7`
 
 #### AGENT_URLS
 
