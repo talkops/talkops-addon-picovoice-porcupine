@@ -3,7 +3,7 @@ import AdmZip from "adm-zip";
 import fs from "fs";
 import path from "path";
 
-import languages from "./parameters/languages.json" assert { type: "json" };
+import languages from "./parameters/languages.json" with { type: "json" };
 
 const addon = new Addon("Picovoice Porcupine");
 
