@@ -3,6 +3,5 @@
     "adm-zip": "^0.5.16",
     "talkops": "^1.4.5"
   },
-  "type": "module",
-  "version": "1.0.0"
+  "type": "module"
 }
