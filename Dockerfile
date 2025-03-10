@@ -15,7 +15,7 @@ RUN npm install
 VOLUME [ "/app" ]
 
 FROM base
-COPY ecosystem.config.cjs index.js package.json ./
+COPY ecosystem.config.cjs index.mjs package.json ./
 RUN npm install --omit=dev
 COPY parameters parameters
 USER node
