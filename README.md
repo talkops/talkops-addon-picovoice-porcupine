@@ -27,8 +27,13 @@ services:
     environment:
       ACCESS_KEY: [your-value]
     volumes:
-      - ./keywords:/data
+      - talkops-addon-picovoice-porcupine_data:/data
     restart: unless-stopped
+
+volumes:
+...
+  talkops-addon-picovoice-porcupine_data: ~
+
 ```
 
 ## Environment Variables
