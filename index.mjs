@@ -10,12 +10,12 @@ const addon = new Addon('Picovoice Porcupine')
 addon.setDockerRepository('talkops/talkops-addon-picovoice-porcupine')
 
 addon.setDescription(`
-This Addon based on [Picovoice Porcupine](https://picovoice.ai/platform/porcupine/) allows the agent to be activated by a custom keyword without requiring continuous listening. It runs efficiently on-device, ensuring privacy and low latency, making it ideal for hands-free voice interaction.
+This Addon based on [Picovoice Porcupine](https://picovoice.ai/platform/porcupine/) allows the agent to be activated by **custom wake words** without requiring continuous listening. It runs efficiently on-device, ensuring privacy and low latency, making it ideal for hands-free voice interaction.
 `)
 
 addon.setInstallationGuide(`
-* Generate and download your keywords from the [Picovoice Console](https://console.picovoice.ai).
-* Place the keywords inside the \`data\` volume.
+* Generate and download your wake words from the [Picovoice Console](https://console.picovoice.ai).
+* Place the wake words inside the \`data\` volume.
 `)
 
 addon.enableDockerVolumeData()
@@ -27,7 +27,7 @@ addon.setEnvironmentVariables({
   },
   LANGUAGE: {
     defaultValue: 'English',
-    description: 'The language of keywords.',
+    description: 'The language of wake words.',
     availableValues: Object.values(languages),
   },
   SENSITIVITY: {
@@ -107,7 +107,7 @@ function updateKeywords() {
   }
 
   if (keywords.size === 0) {
-    addon.errors.push('At least one keyword must be added to the data volume.')
+    addon.errors.push('At least one wake word must be added to the data volume.')
   }
 
   addon.setParameters({
