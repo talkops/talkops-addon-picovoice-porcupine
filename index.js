@@ -18,7 +18,7 @@ addon.setInstallationGuide(`
 * Place the \`keywords\` directory inside the \`data\` volume.
 `);
 
-addon.setDockerVolumeData("keywords");
+addon.enableDockerVolumeData();
 
 addon.setEnvironmentVariables({
   ACCESS_KEY: {
