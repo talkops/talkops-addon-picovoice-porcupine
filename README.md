@@ -10,7 +10,7 @@ This Addon based on [Picovoice Porcupine](https://picovoice.ai/platform/porcupin
 _[TalkOps](https://link.talkops.app/install-talkops) must be installed beforehand._
 
 * Generate and download your keywords from the [Picovoice Console](https://console.picovoice.ai).
-* Place the `keywords` directory inside the `data` volume.
+* Place the keywords inside the `data` volume.
 
 ## Integration Guide
 
